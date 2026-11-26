@@ -18,6 +18,7 @@ export function renderDecisionReport(decision) {
     line("Checks", `${analysis.checks.passed}/${analysis.checks.required} required checks passed`),
     line("Reviews", `${analysis.reviews.passCount}/${analysis.reviews.requiredPasses} independent passes`),
     line("Readiness", `${decision.score} (${decision.band})`),
+    line("Risk", decision.risk ? `${decision.risk.level} (${decision.risk.score})` : "not assessed"),
     line("File extensions", JSON.stringify(files.byExtension)),
     line("Reasons", decision.reasons.join("; ")),
   ];

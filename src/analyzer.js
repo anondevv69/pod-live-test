@@ -33,6 +33,7 @@ export function analyzeChangeBatch(input, policy = DEFAULT_POLICY) {
     reviews,
     files: meaningfulFiles,
     ignored: ignoredFiles,
+    summary: summarizeFiles(meaningfulFiles),
   };
 }
 
