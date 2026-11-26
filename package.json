@@ -1,0 +1,1 @@
+{"description":"Evaluate whether a change batch is ready to count after verification and review.","engines":{"node":">=20"},"exports":{".":"./src/index.js"},"license":"MIT","main":"./src/index.js","name":"ship-window","scripts":{"test":"node --test"},"type":"module","version":"0.1.0"}
